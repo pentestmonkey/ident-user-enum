@@ -1,0 +1,21 @@
+
+1. Install the dependencies
+
+Install PERL using your package manager.
+
+Install the following PERL modules:
+* IO::Socket::INET
+* Net::Ident
+
+These may be available through your package manager.  If not, then 
+install them from CPAN:
+# perl -MCPAN -e shell
+# install IO::Socket::INET
+# install Net::Ident
+
+2. "Install" ident-user-enum.pl
+
+It's just a PERL script, so no installation is necessary, but probably
+want to copy it into your path and set appropriate permissions:
+# install -o root -m 0755 ident-user-enum.pl /usr/local/bin/
+
